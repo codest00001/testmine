@@ -1,19 +1,28 @@
-<head>
-  <title>MyMeteorBlogg</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
 <body>
-  <h1>Welcome to Meteor!</h1>
+  {{> header}}
+  {{> main}}
+  {{> footer}} 
+</body> 
 
-  {{> hello}}
-  {{> info}}
+<!-- 사용되는 순서에 따라 보이게 됨. 템플릿의 순서가 아니라 바디에서 불러오는 순서대로 보이게 됨 -->
 
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="header">
+<div>
+  this is header
+  </div>
+  <hr>
 </template>
 
+<template name="footer">
+  <hr>
+  <div>
+    this is footer
+  </div>
 
+</template>
+
+<template name = "main"> 
+  <div>
+    this is main
+  </div>
+</template>
